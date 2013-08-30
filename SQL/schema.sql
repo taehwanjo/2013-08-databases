@@ -2,8 +2,12 @@ CREATE DATABASE chat;
 
 USE chat;
 
-CREATE TABLE messages (
- /* Describe your table here.*/
+CREATE TABLE `messages` (
+  `id` INT NOT NULL AUTO_INCREMENT DEFAULT NULL,
+  `username` VARCHAR(20) NOT NULL,
+  `text` MEDIUMTEXT NOT NULL,
+  `date` DATETIME NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 /* You can also create more tables, if you need them... */
